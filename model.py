@@ -24,7 +24,7 @@ def model_query(query:str):
         messages, tokenize = False, add_generation_prompt= True
     )
     
-    output = pipe(
+    outputs = pipe(
         prompt,
         max_new_tokens = 256,
         do_sample = True,
